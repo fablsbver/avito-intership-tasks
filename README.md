@@ -34,3 +34,50 @@
         ├── tsconfig.json
 ```
 </details>
+
+# Установка и запуск проекта
+## 1. Установите Node.js
+Скачайте и установите Node.js с [официального сайта](https://nodejs.org/en)
+Убедитесь, что установлен Node.js версии 18+:
+``` 
+node -v
+npm -v
+```
+
+## 2. Склонируйте репозиторий  
+Склонируйте проект к себе с помощью команды:  
+```
+git clone https://github.com/fablsbver/avito-intership-tasks
+```
+## 3. Установите зависимости
+Откройте терминал и установите зависимости с помощью команды:
+``` 
+npm install
+```
+## 4. Установите браузеры для Playwright
+```
+# Эта команда установит Chromium, Firefox и WebKit
+npx playwright install
+
+# Для установки только конкретных браузеров
+npx playwright install chromium
+npx playwright install firefox
+npx playwright install webkit
+```
+
+## 5. Запустите тесты
+* Все тесты можно запустить командой:
+```
+  npx playwright test
+```
+
+* Запуск интерактивного UI:
+```
+npx playwright test --ui
+```
+
+* Запуск одиночного теста:
+```
+npx playwright test tests/example.spec.ts
+```
+## 6. Вы великолепны!
