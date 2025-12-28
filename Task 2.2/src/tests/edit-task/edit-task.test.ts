@@ -61,7 +61,7 @@ test.describe('Редактирование задачи', () => {
             performer: DropdownOptions.Performer.Performer2
         });
 
-        await editTaskPage.checkTaskIsNotUpdated(FieldValues.UpdatedValue.UpdatedTitle);
+        await editTaskPage.checkUpdateBtnIsNotClickable();
 
     });
 

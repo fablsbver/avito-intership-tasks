@@ -22,7 +22,7 @@ export class EditTaskPage extends BasePage {
         this.editTaskTitle = page.locator("//h5[@class='MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom css-hrmw9m']");
         this.titleTaskField = page.locator("//input[@class='MuiInputBase-input MuiOutlinedInput-input css-1pk1fka']");
         this.descriptionTaskfield = page.locator("//textarea[@class='MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputMultiline css-s63k3s']");
-        this.optionField = page.locator("//li[@class='MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-5dycmn']");
+        this.optionField = page.locator("//li[@class='MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters Mui-selected MuiMenuItem-root MuiMenuItem-gutters Mui-selected css-5dycmn']");
         this.priorityDropdown = page.locator("//div[@class='MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-uxvpzc']");
         this.statusDropdown = page.locator("//div[@class='MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-uxvpzc']");
         this.performersDropdown = page.locator("//div[@class='MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-uxvpzc']");
@@ -52,6 +52,7 @@ export class EditTaskPage extends BasePage {
 
         await this.fillField(this.titleTaskField, fields.title);
         await this.fillField(this.descriptionTaskfield.nth(0), fields.description);
+
 
         await this.selectOption(this.priorityDropdown.nth(2), this.optionField, fields.priority);
         await this.selectOption(this.statusDropdown.nth(3), this.optionField,fields.status);

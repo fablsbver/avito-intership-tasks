@@ -55,6 +55,7 @@ test.describe('Создание задачи', () => {
     });
 
     await createTaskPage.clickCreateTask();
+    await createTaskPage.openSearchPage();
     await createTaskPage.checkTaskIsNotCreated(FieldValues.TooLongValue.TooLongTitle);
   });
 
@@ -74,6 +75,7 @@ test.describe('Создание задачи', () => {
     });
 
     await createTaskPage.clickCreateTask();
+    await createTaskPage.openSearchPage();
     await createTaskPage.checkTaskIsNotCreated(FieldValues.SpecialSymbolValue.SpecialSymbolTitle);
   });
 
