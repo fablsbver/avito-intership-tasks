@@ -80,11 +80,9 @@ npx playwright test --ui
 ```
 npx playwright test tests/example.spec.ts
 ```
-
-## 6. Сформируйте отчёт 
-Сформировать отчет можно командой:
+* Запуск тестов с формированием отчёта:
 ```
 npx playwright test --reporter=html,json
 ```
 
-## 7. Вы великолепны!
+## 6. Вы великолепны!
